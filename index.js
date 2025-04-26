@@ -52,6 +52,8 @@ export default {
         headers.delete("user-agent");
         headers["user-agent"] = "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36";
 
+        headers.set("cookie", ".ROBLOSECURITY=${{ secrets.Token }}");
+
 
         const init = {
             method: request.method,
